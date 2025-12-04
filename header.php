@@ -7,13 +7,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="header">
         <div class="header-container">
             <div class="logo-section">
-                <img src="logoM.jpg" alt="Logo Mezcal N'B" class="logo">
+                <img src="img/logoM.jpg" alt="Logo Mezcal N'B" class="logo">
                 <h1 class="brand-name">Mezcal N'B</h1>
             </div>
             
