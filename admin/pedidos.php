@@ -1,7 +1,5 @@
 <?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
 
-<div class="main">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
         <h1 class="page-title">Detalle del Pedido #MZ20251205</h1>
         <div>

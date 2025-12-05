@@ -52,7 +52,7 @@
                     <td>$1,299</td>
                     <td><span class="badge success">Entregado</span></td>
                     <td>PayPal</td>
-                    <td><a href="pedidos.php?id=MZ20251204" class="btn btn-primary btn-sm">Ver</a></td>
+                    <td><a href="pedidos.php?id=MZ20251204" class="btn btn-primary btn-sm">Ver detalle</a></td>
                 </tr>
             </tbody>
         </table>

@@ -1,7 +1,6 @@
 <?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
 
-<div class="main">
+
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
         <h1 class="page-title"><i class="fas fa-bottle-droplet"></i> Productos</h1>
         <button class="btn btn-primary" onclick="openModal('addModal')">
@@ -37,7 +36,6 @@
             </tbody>
         </table>
     </div>
-</div>
 
 <!-- Modal Agregar/Editar -->
 <div class="modal" id="addModal">

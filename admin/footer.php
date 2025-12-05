@@ -1,5 +1,5 @@
-</div> <!-- Cierra .container -->
-</div> <!-- Cierra .main-content -->    
+</div> 
+</div> 
     <script src="../js/admin.js"></script>
     <script>
         // === CONTROL DEL SIDEBAR ===

@@ -12,19 +12,14 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/admin-styles.css">
 </head>
 <body class="admin-body">
 
-    <!-- Botón hamburguesa móvil -->
     <button id="sidebarToggleMobile">
         Menu
     </button>
-
-    <!-- Sidebar -->
+<div class="container">
     <?php include 'sidebar.php'; ?>
-
-    <!-- Contenido principal -->
     <div class="main-content">
-        <div class="container">
+
