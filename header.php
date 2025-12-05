@@ -13,7 +13,7 @@
     <header class="header">
         <div class="header-container">
             <div class="logo-section">
-                <img src="img/logoM.jpg" alt="Logo Mezcal N'B" class="logo">
+                <img src="img/logoE.jpg" alt="Logo Mezcal N'B" class="logo">
                 <h1 class="brand-name">Mezcal N'B</h1>
             </div>
             
@@ -22,8 +22,8 @@
                     <li><a href="index.php" class="nav-link">Inicio</a></li>
                     <li><a href="catalogo.php" class="nav-link">Catálogo</a></li>
                 
-                    <li><a href="#" class="nav-link">Acerca de</a></li>
-                    <li><a href="#" class="nav-link">Contacto</a></li>
+                    <li><a href="sobre-nosotros.php" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="recetas.php" class="nav-link">Recetas</a></li>
                 </ul>
             </nav>
 

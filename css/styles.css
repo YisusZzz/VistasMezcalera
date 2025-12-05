@@ -1,14 +1,14 @@
 /* ========== VARIABLES GLOBALES ========== */
 :root {
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
-    --accent-color: #333333;
-    --accent-light: #666666;
-    --dark-bg: #0a0a0a;
-    --light-bg: #f5f5f5;
-    --text-dark: #1a1a1a;
-    --text-light: #666666;
-    --border-color: #e0e0e0;
+    --primary-color: #1a4d2e;
+    --secondary-color: #4a7c59;
+    --accent-color: #c4a747;
+    --accent-light: #e6c956;
+    --dark-bg: #f5f4f0;
+    --light-bg: #f9f8f5;
+    --text-dark: #2d3d3a;
+    --text-light: #6b7a78;
+    --border-color: #d9d3ca;
     --success-color: #27ae60;
     --transition: all 0.3s ease;
 }
@@ -24,7 +24,7 @@ html, body {
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-dark);
-    background-color: #fff;
+    background-color: var(--dark-bg);
 }
 
 body {
@@ -38,14 +38,14 @@ main {
 
 /* ========== HEADER Y NAVEGACIÓN ========== */
 .header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1a1a1a 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d6a45 100%);
+    color: var(--dark-bg);
     padding: 1rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(26, 77, 46, 0.15);
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #333333;
+    border-bottom: 3px solid var(--accent-color);
 }
 
 .header-container {
@@ -67,7 +67,7 @@ main {
 
 .logo {
     font-size: 2.5rem;
-    background: linear-gradient(135deg, #333333, #666666);
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
     padding: 0.5rem;
     border-radius: 8px;
     width: 50px;
@@ -75,7 +75,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(196, 167, 71, 0.2);
+    color: var(--primary-color);
 }
 
 .brand-name {
@@ -95,7 +96,7 @@ main {
 }
 
 .nav-link {
-    color: white;
+    color: var(--dark-bg);
     text-decoration: none;
     font-size: 1rem;
     transition: var(--transition);
@@ -103,7 +104,7 @@ main {
 }
 
 .nav-link:hover {
-    color: #cccccc;
+    color: var(--accent-color);
 }
 
 .nav-link::after {
@@ -113,7 +114,7 @@ main {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #cccccc;
+    background-color: var(--accent-color);
     transition: width 0.3s ease;
 }
 
@@ -130,29 +131,29 @@ main {
 
 .search-box {
     display: flex;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(74, 124, 89, 0.2);
     border-radius: 25px;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(196, 167, 71, 0.3);
 }
 
 .search-input {
     background: transparent;
     border: none;
-    color: white;
+    color: var(--dark-bg);
     width: 150px;
     outline: none;
     font-size: 0.9rem;
 }
 
 .search-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(74, 124, 89, 0.6);
 }
 
 .search-btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--dark-bg);
     cursor: pointer;
     font-size: 1rem;
     margin-left: 0.5rem;
@@ -162,14 +163,16 @@ main {
     font-size: 1.5rem;
     cursor: pointer;
     transition: var(--transition);
+    color: var(--dark-bg);
 }
 
 .cart-icon:hover {
     transform: scale(1.1);
+    color: var(--accent-color);
 }
 
 .btn-login {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: var(--primary-color);
     padding: 0.7rem 1.5rem;
     border: none;
@@ -182,9 +185,10 @@ main {
 }
 
 .btn-login:hover {
-    background-color: #e8e8e8;
+    background-color: var(--accent-light);
+    color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(196, 167, 71, 0.2);
 }
 
 /* ========== SECCIÓN PRINCIPAL (HERO) ========== */
@@ -193,8 +197,8 @@ main {
 }
 
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #2a2a2a 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d6a45 100%);
+    color: var(--dark-bg);
     padding: 6rem 2rem;
     text-align: center;
     min-height: 400px;
@@ -212,7 +216,7 @@ main {
     right: 0;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(196, 167, 71, 0.08) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -223,7 +227,7 @@ main {
     left: 0;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(74, 124, 89, 0.05) 0%, transparent 70%);
     border-radius: 50%;
 }
 
@@ -232,18 +236,19 @@ main {
     margin-bottom: 1rem;
     letter-spacing: 2px;
     animation: fadeInDown 0.6s ease;
+    color: var(--dark-bg);
 }
 
 .hero-content p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
-    color: #cccccc;
+    color: var(--text-light);
     animation: fadeInUp 0.6s ease 0.2s both;
 }
 
 .btn-primary {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     color: var(--primary-color);
     padding: 1rem 2.5rem;
     border: none;
@@ -257,9 +262,10 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #e8e8e8;
+    background-color: var(--accent-light);
+    color: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(196, 167, 71, 0.2);
 }
 
 /* ========== ANIMACIONES ========== */
@@ -320,12 +326,13 @@ main {
 }
 
 .menu-card {
-    background: white;
+    background: var(--light-bg);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.08);
     transition: var(--transition);
     cursor: pointer;
+    border: 1px solid var(--border-color);
 }
 
 .menu-card:hover {
@@ -344,19 +351,19 @@ main {
 }
 
 .mezcal-1 {
-    background: linear-gradient(135deg, #666666, #1a1a1a);
+    background: linear-gradient(135deg, var(--accent-light), var(--primary-color));
 }
 
 .mezcal-2 {
-    background: linear-gradient(135deg, #555555, #0a0a0a);
+    background: linear-gradient(135deg, var(--accent-color), #2d6a45);
 }
 
 .mezcal-3 {
-    background: linear-gradient(135deg, #777777, #1a1a1a);
+    background: linear-gradient(135deg, var(--accent-light), var(--secondary-color));
 }
 
 .mezcal-4 {
-    background: linear-gradient(135deg, #444444, #000000);
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 }
 
 .card-content {
@@ -387,8 +394,8 @@ main {
 .btn-card {
     width: 100%;
     padding: 0.75rem;
-    background-color: var(--primary-color);
-    color: white;
+    background: linear-gradient(135deg, var(--accent-color), #d4b346);
+    color: var(--primary-color);
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -398,8 +405,10 @@ main {
 }
 
 .btn-card:hover {
-    background-color: var(--accent-light);
-    color: white;
+    background: linear-gradient(135deg, #d4b346, var(--accent-light));
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(196, 167, 71, 0.2);
 }
 
 /* ========== SECCIÓN ABOUT ========== */
@@ -439,23 +448,26 @@ main {
 }
 
 .about-card {
-    background: white;
+    background: var(--light-bg);
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.08);
     transition: var(--transition);
+    border: 1px solid var(--border-color);
 }
 
 .about-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.12);
+    box-shadow: 0 8px 25px rgba(196, 167, 71, 0.15);
+    border-color: var(--accent-color);
 }
 
 .about-card .icon {
     font-size: 3rem;
     display: block;
     margin-bottom: 1rem;
+    color: var(--accent-color);
 }
 
 .about-card h4 {
@@ -471,13 +483,23 @@ main {
 
 /* ========== FOOTER ========== */
 .footer {
-    background-color: var(--primary-color);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d6a45 100%);
+    color: var(--dark-bg);
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
     font-size: 0.95rem;
-    border-top: 2px solid #333333;
+    border-top: 2px solid var(--accent-color);
+}
+
+.footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--accent-light);
 }
 
 /* ========== RESPONSIVE ========== */
@@ -560,3 +582,949 @@ main {
         font-size: 1.5rem;
     }
 }
+
+/* ========== SOBRE NOSOTROS ========== */
+.about-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d6a45 100%);
+    color: var(--dark-bg);
+    padding: 5rem 2rem;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: var(--dark-bg);
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    border-color: var(--accent-light);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(26, 77, 46, 0.1);
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.mission-vision {
+    background-color: var(--light-bg);
+    padding: 4rem 2rem;
+}
+
+.mission-vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mission-card,
+.vision-card,
+.values-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.08);
+    border-left: 4px solid var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--accent-color);
+}
+
+.mission-card h3,
+.vision-card h3,
+.values-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.mission-card p,
+.vision-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.values-card ul {
+    list-style: none;
+}
+
+.values-card li {
+    color: var(--text-light);
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.process-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.process-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.process-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-light));
+    border-radius: 2px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.process-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.08);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.process-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(26, 77, 46, 0.12);
+}
+
+.process-number {
+    font-size: 2.5rem;
+    color: var(--accent-light);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.process-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.process-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.commitment-section {
+    background-color: var(--light-bg);
+    padding: 4rem 2rem;
+}
+
+.commitment-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.commitment-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-light));
+    border-radius: 2px;
+}
+
+.commitment-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.commitment-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.08);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.commitment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(196, 167, 71, 0.15);
+}
+
+.commitment-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.commitment-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.commitment-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========== RECETAS ========== */
+.recipes-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d6a45 100%);
+    color: var(--dark-bg);
+    padding: 5rem 2rem;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipes-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    color: var(--dark-bg);
+}
+
+.recipes-hero p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+.recipes-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.recipes-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.recipes-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-light));
+    border-radius: 2px;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: stretch;
+    align-items: start;
+}
+
+.recipe-card {
+    background: var(--light-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.1);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(196, 167, 71, 0.2);
+    border-color: var(--accent-color);
+}
+
+.recipe-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    display: block;
+}
+
+.recipe-1 {
+    background: linear-gradient(135deg, var(--accent-light), var(--primary-color));
+}
+
+.recipe-2 {
+    background: linear-gradient(135deg, var(--accent-color), #2d6a45);
+}
+
+.recipe-3 {
+    background: linear-gradient(135deg, var(--accent-light), var(--secondary-color));
+}
+
+.recipe-4 {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.recipe-5 {
+    background: linear-gradient(135deg, var(--accent-light), #2d6a45);
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.recipe-6 {
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.recipe-content {
+    padding: 1.5rem;
+}
+
+.recipe-content h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.recipe-difficulty {
+    margin-bottom: 1rem;
+}
+
+.difficulty-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.recipe-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.recipe-description {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.recipe-ingredients,
+.recipe-instructions {
+    margin-bottom: 1.5rem;
+}
+
+.recipe-ingredients h4,
+.recipe-instructions h4 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+.recipe-ingredients ul,
+.recipe-instructions ol {
+    margin-left: 1.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.recipe-ingredients li,
+.recipe-instructions li {
+    margin-bottom: 0.5rem;
+}
+
+.tips-section {
+    background-color: var(--light-bg);
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+}
+
+.tips-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tips-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-light));
+    border-radius: 2px;
+}
+
+.tips-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(26, 77, 46, 0.08);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(196, 167, 71, 0.15);
+    border-color: var(--accent-color);
+}
+
+.tip-card h4 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========== RESPONSIVE SOBRE NOSOTROS Y RECETAS ========== */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .recipes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1,
+    .recipes-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero p,
+    .recipes-hero p {
+        font-size: 1rem;
+    }
+}
+
+/* ========== CATÁLOGO ========== */
+.catalog-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.catalog-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background: var(--light-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(26, 77, 46, 0.1);
+    overflow: hidden;
+    transition: .3s;
+    border-top: 4px solid var(--accent-color);
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    border-top-color: var(--accent-color);
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(196, 167, 71, 0.2);
+}
+
+.product-img {
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 1.2rem;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.product-info p {
+    margin: .5rem 0 1rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.btn-buy {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(135deg, var(--accent-color), #d4b346);
+    color: var(--primary-color);
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+    border: 2px solid var(--accent-color);
+}
+
+.btn-buy:hover {
+    background: linear-gradient(135deg, #d4b346, var(--accent-light));
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(196, 167, 71, 0.2);
+}
+
+/* MODAL ESTILIZADO */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 77, 46, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn .3s ease;
+}
+
+.modal-window {
+    width: 80%;
+    max-width: 900px;
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(26, 77, 46, 0.2);
+    position: relative;
+    transform: scale(0.9);
+    opacity: 0;
+    animation: showModal .3s forwards ease;
+    border: 1px solid var(--border-color);
+}
+
+@keyframes showModal {
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.modal-close:hover {
+    color: var(--accent-color);
+}
+
+.modal-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.modal-img {
+    width: 45%;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+}
+
+.modal-info {
+    width: 55%;
+}
+
+.modal-info h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.modal-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+    }
+
+    .modal-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .modal-info {
+        width: 100%;
+    }
+}
+
+/* ========== REGISTRO ========== */
+.register-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(26, 77, 46, 0.1);
+    border-top: 4px solid var(--accent-color);
+}
+
+.register-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background: var(--dark-bg);
+    color: var(--text-dark);
+}
+
+.form-group input::placeholder {
+    color: var(--text-light);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(196, 167, 71, 0.1);
+    background: var(--dark-bg);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, var(--accent-color), #d4b346);
+    color: var(--primary-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #d4b346, var(--accent-light));
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(196, 167, 71, 0.2);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--text-light);
+}
+
+.login-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.login-link a:hover {
+    color: var(--primary-color);
+}
+
+.login-link a:hover {
+    color: var(--accent-light);
+}
+
+.back-link {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.back-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.back-link a:hover {
+    color: var(--accent-light);
+}
+
+/* ========== MODAL DE RECETAS ========== */
+.receta-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 77, 46, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.receta-modal-window {
+    width: 90%;
+    max-width: 800px;
+    background: var(--light-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(26, 77, 46, 0.2);
+    position: relative;
+    transform: scale(0.9);
+    opacity: 0;
+    animation: showModal 0.3s forwards ease;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+}
+
+.receta-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.receta-modal-close:hover {
+    color: var(--accent-color);
+}
+
+.receta-modal-content h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.receta-modal-info {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.receta-modal-info span {
+    font-size: 1rem;
+}
+
+.receta-modal-ingredientes,
+.receta-modal-instrucciones {
+    margin-bottom: 2rem;
+}
+
+.receta-modal-ingredientes h3,
+.receta-modal-instrucciones h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.receta-modal-ingredientes ul,
+.receta-modal-instrucciones ol {
+    margin-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.receta-modal-ingredientes li,
+.receta-modal-instrucciones li {
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+}
+
+.recipe-view-more {
+    color: var(--accent-light);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.recipe-card {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .receta-modal-window {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .receta-modal-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .receta-modal-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
