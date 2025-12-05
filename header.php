@@ -20,7 +20,8 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.php" class="nav-link">Inicio</a></li>
-                    <li><a href="#menu" class="nav-link">Catálogo</a></li>
+                    <li><a href="catalogo.php" class="nav-link">Catálogo</a></li>
+                
                     <li><a href="#" class="nav-link">Acerca de</a></li>
                     <li><a href="#" class="nav-link">Contacto</a></li>
                 </ul>

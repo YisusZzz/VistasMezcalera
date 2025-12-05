@@ -7,10 +7,11 @@ include 'header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - Mezcal N'B</title>
+    <title>Crear Cuenta - Mezcal N'B</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
-        .login-container {
+        .register-container {
             max-width: 400px;
             margin: 4rem auto;
             padding: 2rem;
@@ -20,7 +21,7 @@ include 'header.php';
             border-top: 4px solid #333333;
         }
 
-        .login-container h2 {
+        .register-container h2 {
             text-align: center;
             color: var(--primary-color);
             margin-bottom: 2rem;
@@ -53,28 +54,6 @@ include 'header.php';
             box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
         }
 
-        .remember-forgot {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-
-        .remember-forgot input[type="checkbox"] {
-            cursor: pointer;
-        }
-
-        .remember-forgot a {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .remember-forgot a:hover {
-            color: var(--accent-light);
-        }
-
         .btn-submit {
             width: 100%;
             padding: 0.9rem;
@@ -95,20 +74,20 @@ include 'header.php';
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .signup-link {
+        .login-link {
             text-align: center;
             margin-top: 1.5rem;
             color: var(--text-light);
         }
 
-        .signup-link a {
+        .login-link a {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: bold;
             transition: var(--transition);
         }
 
-        .signup-link a:hover {
+        .login-link a:hover {
             color: var(--accent-light);
         }
 
@@ -129,16 +108,23 @@ include 'header.php';
         }
     </style>
 </head>
+
 <body>
     <main class="main-content">
-        <div class="login-container">
+        <div class="register-container">
+
             <div class="back-link">
                 <a href="index.php">← Volver al inicio</a>
             </div>
 
-            <h2>Iniciar Sesión</h2>
+            <h2>Crear Cuenta</h2>
 
-            <form method="POST" action="">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                </div>
+
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
                     <input type="email" id="email" name="email" placeholder="tu@email.com" required>
@@ -149,19 +135,18 @@ include 'header.php';
                     <input type="password" id="password" name="password" placeholder="••••••••" required>
                 </div>
 
-                <div class="remember-forgot">
-                    <label>
-                        <input type="checkbox" name="remember"> Recuérdame
-                    </label>
-                    <a href="#">¿Olvidaste tu contraseña?</a>
+                <div class="form-group">
+                    <label for="password2">Confirmar Contraseña</label>
+                    <input type="password" id="password2" name="password2" placeholder="••••••••" required>
                 </div>
 
-                <button type="submit" class="btn-submit">Iniciar Sesión</button>
+                <button type="submit" class="btn-submit">Registrarse</button>
 
-                <div class="signup-link">
-                    ¿No tienes cuenta? <a href="register.php">Regístrate aquí</a>
+                <div class="login-link">
+                    ¿Ya tienes cuenta? <a href="login.php">Inicia sesión aquí</a>
                 </div>
             </form>
+
         </div>
     </main>
 
