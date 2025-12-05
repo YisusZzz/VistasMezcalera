@@ -1,8 +1,10 @@
 <?php include 'header.php'; ?>
 
-<h1 class="page-title">
-    Dashboard
-</h1>
+
+        <h1 class="page-title">
+            Dashboard
+        </h1>
+        
 
 <div class="stats-grid">
     <div class="stat-card">

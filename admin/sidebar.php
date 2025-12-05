@@ -1,4 +1,4 @@
-<aside class="sidebar" id="sidebar">
+<div class="sidebar" id="sidebar">
     <div class="sidebar-header">
         <img src="../img/logoM.jpg" alt="Mezcal N'B" class="admin-logo">
         <h3>Mezcal N'B</h3>
@@ -38,6 +38,6 @@
             <span>Cerrar Sesión</span>
         </a>
     </div>
-</aside>
+</div>
 
 <div class="sidebar-overlay" id="sidebarOverlay"></div>

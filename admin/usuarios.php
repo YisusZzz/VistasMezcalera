@@ -1,5 +1,4 @@
 <?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
 
 <div class="main">
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
