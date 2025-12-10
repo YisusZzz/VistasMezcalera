@@ -1,7 +1,7 @@
 <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
         <img src="../img/logoM.jpg" alt="Mezcal N'B" class="admin-logo">
-        <h3>Mezcal N'B</h3>
+        <h3>N'B</h3>
         <button class="sidebar-close" id="sidebarClose">×</button>
     </div>
 

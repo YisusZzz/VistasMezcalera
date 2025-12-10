@@ -1,4 +1,3 @@
-// admin/js/admin.js
 function confirmDelete(mensaje = '¿Eliminar este registro?') {
     Swal.fire({
         title: '¿Estás seguro?',
